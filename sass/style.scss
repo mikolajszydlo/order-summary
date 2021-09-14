@@ -1,0 +1,126 @@
+// Primary colors
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+
+//Neutral colors
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: 100vw 48vh;
+    background-repeat: no-repeat;
+    background-color: $Pale-blue;
+}
+
+.container {
+    margin: calc((100vh - 630px)/2) auto;
+    width: 400px;
+    height: 630px;
+    background-color: $Very-pale-blue;
+    border-radius: 20px;
+    text-align: center;
+    p {
+        font-weight: 500;
+        text-align: center;
+        color: $Desaturated-blue;
+    }
+    h2, h3 {
+        font-weight: 900;
+        color: $Dark-blue;
+    }
+    .logo {
+        height: 200px;
+        background-image: url(/images/illustration-hero.svg);
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .summary-text, .summary-content, .form{
+        margin: 0 auto;
+        width: 320px;
+        
+    }
+    .summary-text h2{
+        margin-top: 50px;
+
+    }
+    .summary-text p {
+        margin: 20px 5px;
+    }
+    .summary-content {
+        height: 90px;
+        background-color: $Very-pale-blue;
+        font-size: 12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+    
+        img {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        div {
+            height: 43px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        div p, h3 {
+            margin: 0;
+            text-align: left;
+        }
+        a {
+            display: block;
+            color: $Bright-blue;
+            align-items: flex-end;
+            flex-grow: 1;
+            margin-right: 20px;
+            text-align: end;
+            font-weight: bold;
+        }
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    button { 
+        border: none; 
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .btn-proceed {
+        height: 45px;
+        background-color: $Bright-blue;
+        box-shadow: 0 20px 20px -5px rgba(114, 128, 167, 0.8);
+        border-radius: 8px;
+        color: $Pale-blue;
+    }
+    .btn-cancel {
+        margin-top: 35px;
+        background-color: inherit;
+        color: $Desaturated-blue;;
+
+    }
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    a { color: hsl(228, 45%, 44%); }
+}
