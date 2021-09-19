@@ -16,7 +16,7 @@ body {
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url("/images/pattern-background-desktop.svg");
     background-size: 100vw 48vh;
     background-repeat: no-repeat;
     background-color: $Pale-blue;
@@ -45,7 +45,7 @@ main {
     }
     .logo {
         height: 200px;
-        background-image: url(/images/illustration-hero.svg);
+        background-image: url("/images/illustration-hero.svg");
         background-size: cover;
         background-position: center;
         border-top-left-radius: 20px;
