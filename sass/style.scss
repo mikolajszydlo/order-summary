@@ -21,11 +21,16 @@ body {
     background-repeat: no-repeat;
     background-color: $Pale-blue;
 }
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .container {
-    margin: calc((100vh - 630px)/2) auto;
     width: 400px;
-    height: 630px;
     background-color: $Very-pale-blue;
     border-radius: 20px;
     text-align: center;
@@ -80,7 +85,7 @@ body {
         div p, h3 {
             margin: 0;
             text-align: left;
-        }
+          }
         a {
             display: block;
             color: $Bright-blue;
@@ -110,17 +115,14 @@ body {
     }
     .btn-cancel {
         margin-top: 35px;
+        margin-bottom: 30px;
         background-color: inherit;
         color: $Desaturated-blue;;
-
     }
 }
 
-.attribution { 
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+.attribution {
+    margin-top: 50px;
     font-size: 11px;
     a { color: hsl(228, 45%, 44%); }
 }
